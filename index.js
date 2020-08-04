@@ -1,8 +1,7 @@
-function myFunction() {
-  var x = document.getElementById("name");
-  x.value = x.value.toUpperCase();
-}
 $(document).ready(function() {
+  $('#name').keyup(function() {
+    $(this).val($(this).val().toUpperCase());
+  });
   $("#basic-form").validate({
     rules: {
       name : {
