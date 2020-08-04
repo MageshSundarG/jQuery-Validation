@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Validation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+
+
+  </head>
+  <body>
+    <form id="basic-form" action="" method="post">
+      <p>
+        <label for="name">Name <span>(required, at least 3 characters)</span></label>
+        <input id="name" name="name" minlength="3" type="text" onkeyup="myFunction()" required>
+      </p>
+      <p>
+        <label for="email">E-Mail <span>(required)</span></label>
+        <input id="email" type="email" name="email" required>
+      </p>
+      <p>
+        <label for="age">Your Age <span>(minimum 18)</span></label>
+        <input id="age" name="age">
+      </p>
+      <p>
+        <label for="weight">Weight <span>(required if age over 50)</span></label>
+        <input id="weight" name="weight">
+      </p>
+      <p>
+        <input class="submit" type="submit" value="SUBMIT" onclick="myFunction()">
+      </p>
+    </form>
+
+
+  </body>
+</html>
